@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://infohub-india.replit.app/sitemap.xml
+
+# Important pages
+Allow: /
+Allow: /sitemap.xml
+
+# Block unnecessary files
+Disallow: /src/
+Disallow: /*.ts$
+Disallow: /*.tsx$
