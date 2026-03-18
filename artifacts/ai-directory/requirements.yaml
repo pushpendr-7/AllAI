@@ -1,0 +1,14 @@
+packages:
+  "framer-motion": "For smooth page transitions, modal animations, and list sorting animations"
+  "clsx": "For conditional class name joining"
+  "tailwind-merge": "For merging Tailwind classes without conflicts"
+
+images:
+  - path: "artifacts/ai-directory/public/images/hero-bg.png"
+    description: "Deep dark futuristic tech background with subtle glowing blue and purple neural network nodes and abstract digital grid lines"
+    aspect_ratio: "16:9"
+
+notes:
+  - Frontend only application, all data is hardcoded
+  - Uses Framer Motion for premium animations
+  - Uses Lucide React for consistent iconography

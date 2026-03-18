@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "World AI Directory"
+version = "1.0.0"
+id = "artifacts/ai-directory"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+localPort = 19272
+name = "web"
+paths = ["/"]
+
+[services.development]
+run = "pnpm --filter @workspace/ai-directory run dev"
+
+[services.env]
+PORT = "19272"
+BASE_PATH = "/"
+
+[services.production]
+build = ["pnpm", "--filter", "@workspace/ai-directory", "run", "build"]
+publicDir = "artifacts/ai-directory/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
