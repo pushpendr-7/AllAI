@@ -1,36 +1,31 @@
-import { Switch, Route, Router as WouterRouter } from "wouter";
+import { useState } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
-import { TooltipProvider } from "@/components/ui/tooltip";
+import { Navbar } from "@/components/Navbar";
 import Home from "@/pages/home";
-import NotFound from "@/pages/not-found";
+import ShoppingPage from "@/pages/shopping";
+import MoviesPage from "@/pages/movies";
 
 const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      refetchOnWindowFocus: false,
-    },
-  },
+  defaultOptions: { queries: { refetchOnWindowFocus: false } },
 });
 
-function Router() {
-  return (
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route component={NotFound} />
-    </Switch>
-  );
-}
+type Tab = 'ai' | 'shopping' | 'movies';
 
 function App() {
+  const [activeTab, setActiveTab] = useState<Tab>('ai');
+
   return (
     <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
-          <Router />
-        </WouterRouter>
-        <Toaster />
-      </TooltipProvider>
+      <div className="min-h-screen bg-gray-50">
+        <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
+        <main>
+          {activeTab === 'ai' && <Home />}
+          {activeTab === 'shopping' && <ShoppingPage />}
+          {activeTab === 'movies' && <MoviesPage />}
+        </main>
+      </div>
+      <Toaster />
     </QueryClientProvider>
   );
 }

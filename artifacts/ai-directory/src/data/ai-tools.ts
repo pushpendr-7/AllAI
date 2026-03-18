@@ -1,3 +1,4 @@
+import type { ComponentType } from "react";
 import { 
   MessageSquare, Image as ImageIcon, Video, Mic, Code2, Sparkles, 
   Brain, FileText, Layout, Bot, Scissors, Zap, Globe, Cpu, Keyboard,
@@ -19,7 +20,7 @@ export interface AITool {
   rating: number;
   categories: Category[];
   websiteUrl: string;
-  icon: React.ElementType;
+  icon: ComponentType<{ className?: string }>;
   gradient: string;
 }
 

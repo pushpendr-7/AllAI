@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @theme inline {
-  --font-display: 'Outfit', sans-serif;
-  --font-sans: 'Plus Jakarta Sans', sans-serif;
-
+  --font-sans: 'Inter', sans-serif;
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
   --color-card: hsl(var(--card));
@@ -24,7 +22,6 @@
   --color-border: hsl(var(--border));
   --color-input: hsl(var(--input));
   --color-ring: hsl(var(--ring));
-
   --radius-xl: 1rem;
   --radius-lg: var(--radius);
   --radius-md: calc(var(--radius) - 2px);
@@ -32,36 +29,26 @@
 }
 
 :root {
-  /* Dark tech professional theme */
-  --background: 222 47% 6%;
-  --foreground: 210 40% 98%;
-  
-  --card: 222 47% 9%;
-  --card-foreground: 210 40% 98%;
-  
-  --popover: 222 47% 9%;
-  --popover-foreground: 210 40% 98%;
-  
-  --primary: 220 90% 56%;
-  --primary-foreground: 210 40% 98%;
-  
-  --secondary: 222 20% 15%;
-  --secondary-foreground: 210 40% 98%;
-  
-  --muted: 222 20% 15%;
-  --muted-foreground: 215 20% 65%;
-  
-  --accent: 270 90% 65%;
-  --accent-foreground: 210 40% 98%;
-  
+  --background: 0 0% 97%;
+  --foreground: 222 47% 11%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 47% 11%;
+  --primary: 221 83% 53%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 0% 96%;
+  --secondary-foreground: 222 47% 11%;
+  --muted: 0 0% 94%;
+  --muted-foreground: 215 16% 47%;
+  --accent: 0 0% 94%;
+  --accent-foreground: 222 47% 11%;
   --destructive: 0 84% 60%;
-  --destructive-foreground: 210 40% 98%;
-  
-  --border: 222 20% 15%;
-  --input: 222 20% 15%;
-  --ring: 220 90% 56%;
-  
-  --radius: 0.75rem;
+  --destructive-foreground: 0 0% 100%;
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
+  --ring: 221 83% 53%;
+  --radius: 0.5rem;
 }
 
 @layer base {
@@ -70,37 +57,5 @@
   }
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    background-image: 
-      radial-gradient(circle at 15% 50%, rgba(59, 130, 246, 0.08), transparent 25%),
-      radial-gradient(circle at 85% 30%, rgba(147, 51, 234, 0.08), transparent 25%);
-    background-attachment: fixed;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-display tracking-tight;
-  }
-}
-
-@layer utilities {
-  .glass-panel {
-    @apply bg-card/60 backdrop-blur-xl border border-white/5;
-  }
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
-  }
-  
-  /* Custom Scrollbar for dark theme */
-  ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
-  ::-webkit-scrollbar-track {
-    background: hsl(var(--background));
-  }
-  ::-webkit-scrollbar-thumb {
-    background: hsl(var(--muted));
-    border-radius: 4px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: hsl(var(--secondary-foreground) / 0.3);
   }
 }

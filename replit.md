@@ -1,3 +1,11 @@
+# InfoHub India — World Directory
+
+## Artifacts
+- **ai-directory** — Main React+Vite frontend at `/`
+  - AI Directory (45+ AI tools with search, filter, rating)
+  - Shopping Sites Directory (India ki top shopping websites)
+  - Movies & OTT Directory (Hindi/English streaming platforms)
+
 # Workspace
 
 ## Overview
