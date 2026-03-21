@@ -4,9 +4,16 @@ import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
-const port = process.env.PORT || 5173;
+import { defineConfig } from 'vite'
 
-const port = Number(rawPort);
+export default defineConfig({
+  server: {
+    port: Number(process.env.PORT) || 5173,
+    host: true
+  }
+})
+
+#const port = Number(rawPort);
 
 if (Number.isNaN(port) || port <= 0) {
   throw new Error(`Invalid PORT value: "${rawPort}"`);
