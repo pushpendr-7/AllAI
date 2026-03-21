@@ -7,34 +7,43 @@ interface NavbarProps {
   setActiveTab: (tab: Tab) => void;
 }
 
-export function Navbar({ activeTab, setActiveTab }: NavbarProps) {
-  const tabs = [
-    { id: 'ai' as Tab, label: '🤖 AI Directory', desc: 'World AI Tools' },
-    { id: 'shopping' as Tab, label: '🛒 Shopping Sites', desc: 'Best Online Stores' },
-    { id: 'movies' as Tab, label: '🎬 Movies & OTT', desc: 'Watch Online' },
-  ];
+const tabs = [
+  { id: 'ai' as Tab, label: '🤖 AI Directory', mobileLabel: 'AI' },
+  { id: 'shopping' as Tab, label: '🛒 Shopping', mobileLabel: 'Shopping' },
+  { id: 'movies' as Tab, label: '🎬 Movies & OTT', mobileLabel: 'Movies' },
+];
 
+export function Navbar({ activeTab, setActiveTab }: NavbarProps) {
   return (
-    <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between py-3 gap-2">
-          <div>
-            <h1 className="text-xl font-bold text-gray-900 leading-tight">🌐 InfoHub India</h1>
-            <p className="text-xs text-gray-400">AI • Shopping • Movies — Sab ek jagah</p>
+        <div className="flex items-center justify-between h-14">
+          {/* Logo */}
+          <div className="flex items-center gap-2.5 shrink-0">
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center text-white font-bold text-sm shadow-md">
+              IH
+            </div>
+            <div>
+              <span className="font-bold text-gray-900 text-base leading-none">InfoHub India</span>
+              <p className="text-[10px] text-gray-400 leading-none mt-0.5 hidden sm:block">AI • Shopping • Movies</p>
+            </div>
           </div>
-          <nav className="flex gap-1 w-full sm:w-auto overflow-x-auto">
+
+          {/* Navigation */}
+          <nav className="flex gap-1">
             {tabs.map(tab => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
                 className={cn(
-                  "whitespace-nowrap px-4 py-2 rounded-lg text-sm font-medium transition-all border",
+                  "px-3 sm:px-4 py-2 rounded-lg text-sm font-medium transition-all border",
                   activeTab === tab.id
-                    ? "bg-gray-900 text-white border-gray-900"
-                    : "bg-transparent text-gray-600 border-transparent hover:bg-gray-100"
+                    ? "bg-blue-600 text-white border-blue-600 shadow-sm"
+                    : "bg-transparent text-gray-600 border-transparent hover:bg-gray-100 hover:text-gray-900"
                 )}
               >
-                {tab.label}
+                <span className="hidden sm:inline">{tab.label}</span>
+                <span className="sm:hidden">{tab.mobileLabel}</span>
               </button>
             ))}
           </nav>

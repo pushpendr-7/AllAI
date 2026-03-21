@@ -47,7 +47,7 @@ export const aiTools: AITool[] = [
     categories: ["Text & Chat", "Code", "Productivity"],
     websiteUrl: "https://chat.openai.com",
     icon: MessageSquare,
-    gradient: "from-green-500/20 to-emerald-600/20"
+    gradient: "from-green-500 to-emerald-600"
   },
   {
     id: "claude",
@@ -61,7 +61,7 @@ export const aiTools: AITool[] = [
     categories: ["Text & Chat", "Research"],
     websiteUrl: "https://claude.ai",
     icon: Brain,
-    gradient: "from-amber-500/20 to-orange-600/20"
+    gradient: "from-amber-500 to-orange-600"
   },
   {
     id: "gemini",
@@ -75,7 +75,7 @@ export const aiTools: AITool[] = [
     categories: ["Text & Chat", "Research", "Productivity"],
     websiteUrl: "https://gemini.google.com",
     icon: Sparkles,
-    gradient: "from-blue-500/20 to-purple-600/20"
+    gradient: "from-blue-500 to-purple-600"
   },
   {
     id: "grok",
@@ -89,7 +89,7 @@ export const aiTools: AITool[] = [
     categories: ["Text & Chat"],
     websiteUrl: "https://x.ai",
     icon: Zap,
-    gradient: "from-slate-500/20 to-slate-800/20"
+    gradient: "from-slate-600 to-slate-900"
   },
   {
     id: "llama",
@@ -103,7 +103,7 @@ export const aiTools: AITool[] = [
     categories: ["Text & Chat", "Code"],
     websiteUrl: "https://ai.meta.com/llama/",
     icon: Cpu,
-    gradient: "from-blue-600/20 to-cyan-500/20"
+    gradient: "from-blue-600 to-cyan-500"
   },
   {
     id: "copilot-ms",
@@ -117,7 +117,7 @@ export const aiTools: AITool[] = [
     categories: ["Productivity", "Text & Chat"],
     websiteUrl: "https://copilot.microsoft.com",
     icon: Layout,
-    gradient: "from-blue-400/20 to-blue-600/20"
+    gradient: "from-blue-400 to-blue-700"
   },
   {
     id: "midjourney",
@@ -131,7 +131,7 @@ export const aiTools: AITool[] = [
     categories: ["Image Generation"],
     websiteUrl: "https://midjourney.com",
     icon: ImageIcon,
-    gradient: "from-indigo-500/20 to-purple-600/20"
+    gradient: "from-indigo-500 to-purple-700"
   },
   {
     id: "dalle3",
@@ -145,7 +145,7 @@ export const aiTools: AITool[] = [
     categories: ["Image Generation"],
     websiteUrl: "https://openai.com/dall-e-3",
     icon: Wand2,
-    gradient: "from-sky-400/20 to-blue-600/20"
+    gradient: "from-sky-400 to-blue-700"
   },
   {
     id: "stable-diffusion",
@@ -159,7 +159,7 @@ export const aiTools: AITool[] = [
     categories: ["Image Generation"],
     websiteUrl: "https://stability.ai",
     icon: ImageIcon,
-    gradient: "from-purple-500/20 to-pink-600/20"
+    gradient: "from-purple-500 to-pink-700"
   },
   {
     id: "firefly",
@@ -173,7 +173,7 @@ export const aiTools: AITool[] = [
     categories: ["Image Generation", "Productivity"],
     websiteUrl: "https://adobe.com/firefly",
     icon: Scissors,
-    gradient: "from-red-500/20 to-orange-600/20"
+    gradient: "from-red-500 to-orange-600"
   },
   {
     id: "runway",
@@ -187,7 +187,7 @@ export const aiTools: AITool[] = [
     categories: ["Video", "Image Generation"],
     websiteUrl: "https://runwayml.com",
     icon: Video,
-    gradient: "from-violet-500/20 to-fuchsia-600/20"
+    gradient: "from-violet-500 to-fuchsia-700"
   },
   {
     id: "sora",
@@ -201,7 +201,7 @@ export const aiTools: AITool[] = [
     categories: ["Video"],
     websiteUrl: "https://openai.com/sora",
     icon: Video,
-    gradient: "from-teal-400/20 to-cyan-600/20"
+    gradient: "from-teal-400 to-cyan-700"
   },
   {
     id: "elevenlabs",
@@ -215,7 +215,7 @@ export const aiTools: AITool[] = [
     categories: ["Audio"],
     websiteUrl: "https://elevenlabs.io",
     icon: Mic,
-    gradient: "from-neutral-600/20 to-neutral-800/20"
+    gradient: "from-neutral-700 to-neutral-900"
   },
   {
     id: "whisper",
@@ -229,7 +229,7 @@ export const aiTools: AITool[] = [
     categories: ["Audio"],
     websiteUrl: "https://openai.com/research/whisper",
     icon: Mic,
-    gradient: "from-green-400/20 to-blue-500/20"
+    gradient: "from-green-400 to-blue-600"
   },
   {
     id: "github-copilot",
@@ -243,7 +243,7 @@ export const aiTools: AITool[] = [
     categories: ["Code", "Productivity"],
     websiteUrl: "https://github.com/features/copilot",
     icon: Code2,
-    gradient: "from-gray-700/20 to-black/20"
+    gradient: "from-gray-700 to-gray-900"
   },
   {
     id: "cursor",
@@ -257,7 +257,7 @@ export const aiTools: AITool[] = [
     categories: ["Code"],
     websiteUrl: "https://cursor.sh",
     icon: Keyboard,
-    gradient: "from-indigo-600/20 to-indigo-900/20"
+    gradient: "from-indigo-600 to-indigo-900"
   },
   {
     id: "tabnine",
@@ -271,7 +271,7 @@ export const aiTools: AITool[] = [
     categories: ["Code"],
     websiteUrl: "https://tabnine.com",
     icon: Code2,
-    gradient: "from-purple-500/20 to-indigo-500/20"
+    gradient: "from-purple-500 to-indigo-600"
   },
   {
     id: "perplexity",
@@ -285,7 +285,7 @@ export const aiTools: AITool[] = [
     categories: ["Research", "Text & Chat"],
     websiteUrl: "https://perplexity.ai",
     icon: Search,
-    gradient: "from-cyan-400/20 to-blue-500/20"
+    gradient: "from-cyan-500 to-blue-600"
   },
   {
     id: "notion-ai",
@@ -299,7 +299,7 @@ export const aiTools: AITool[] = [
     categories: ["Productivity", "Text & Chat"],
     websiteUrl: "https://notion.so/product/ai",
     icon: FileText,
-    gradient: "from-stone-500/20 to-stone-700/20"
+    gradient: "from-stone-600 to-stone-800"
   },
   {
     id: "jasper",
@@ -313,7 +313,7 @@ export const aiTools: AITool[] = [
     categories: ["Text & Chat", "Productivity"],
     websiteUrl: "https://jasper.ai",
     icon: PenTool,
-    gradient: "from-purple-600/20 to-pink-600/20"
+    gradient: "from-purple-600 to-pink-700"
   },
   {
     id: "copyai",
@@ -327,7 +327,7 @@ export const aiTools: AITool[] = [
     categories: ["Text & Chat"],
     websiteUrl: "https://copy.ai",
     icon: PenTool,
-    gradient: "from-green-400/20 to-teal-500/20"
+    gradient: "from-green-400 to-teal-600"
   },
   {
     id: "writesonic",
@@ -341,7 +341,7 @@ export const aiTools: AITool[] = [
     categories: ["Text & Chat", "Productivity"],
     websiteUrl: "https://writesonic.com",
     icon: PenTool,
-    gradient: "from-orange-400/20 to-red-500/20"
+    gradient: "from-orange-400 to-red-600"
   },
   {
     id: "grammarly",
@@ -355,7 +355,7 @@ export const aiTools: AITool[] = [
     categories: ["Productivity"],
     websiteUrl: "https://grammarly.com",
     icon: FileText,
-    gradient: "from-green-400/20 to-emerald-600/20"
+    gradient: "from-green-500 to-emerald-700"
   },
   {
     id: "deepl",
@@ -369,7 +369,7 @@ export const aiTools: AITool[] = [
     categories: ["Productivity", "Text & Chat"],
     websiteUrl: "https://deepl.com",
     icon: Globe,
-    gradient: "from-blue-700/20 to-indigo-800/20"
+    gradient: "from-blue-700 to-indigo-900"
   },
   {
     id: "otter",
@@ -383,7 +383,7 @@ export const aiTools: AITool[] = [
     categories: ["Audio", "Productivity"],
     websiteUrl: "https://otter.ai",
     icon: Mic,
-    gradient: "from-blue-400/20 to-sky-500/20"
+    gradient: "from-blue-400 to-sky-600"
   },
   {
     id: "lensa",
@@ -397,7 +397,7 @@ export const aiTools: AITool[] = [
     categories: ["Image Generation"],
     websiteUrl: "https://prisma-ai.com/lensa",
     icon: ImageIcon,
-    gradient: "from-yellow-400/20 to-orange-500/20"
+    gradient: "from-yellow-500 to-orange-600"
   },
   {
     id: "removebg",
@@ -411,7 +411,7 @@ export const aiTools: AITool[] = [
     categories: ["Image Generation", "Productivity"],
     websiteUrl: "https://remove.bg",
     icon: Scissors,
-    gradient: "from-gray-300/20 to-gray-500/20"
+    gradient: "from-gray-500 to-gray-700"
   },
   {
     id: "did",
@@ -425,7 +425,7 @@ export const aiTools: AITool[] = [
     categories: ["Video"],
     websiteUrl: "https://d-id.com",
     icon: Video,
-    gradient: "from-purple-500/20 to-indigo-600/20"
+    gradient: "from-purple-500 to-indigo-700"
   },
   {
     id: "synthesia",
@@ -439,7 +439,7 @@ export const aiTools: AITool[] = [
     categories: ["Video"],
     websiteUrl: "https://synthesia.io",
     icon: Video,
-    gradient: "from-blue-500/20 to-cyan-500/20"
+    gradient: "from-blue-500 to-cyan-600"
   },
   {
     id: "heygen",
@@ -453,7 +453,7 @@ export const aiTools: AITool[] = [
     categories: ["Video"],
     websiteUrl: "https://heygen.com",
     icon: Video,
-    gradient: "from-violet-500/20 to-purple-600/20"
+    gradient: "from-violet-500 to-purple-700"
   },
   {
     id: "pikalabs",
@@ -467,7 +467,7 @@ export const aiTools: AITool[] = [
     categories: ["Video"],
     websiteUrl: "https://pika.art",
     icon: Wand2,
-    gradient: "from-pink-500/20 to-rose-600/20"
+    gradient: "from-pink-500 to-rose-700"
   },
   {
     id: "udio",
@@ -481,7 +481,7 @@ export const aiTools: AITool[] = [
     categories: ["Audio"],
     websiteUrl: "https://udio.com",
     icon: Mic,
-    gradient: "from-orange-500/20 to-amber-600/20"
+    gradient: "from-orange-500 to-amber-700"
   },
   {
     id: "suno",
@@ -495,7 +495,7 @@ export const aiTools: AITool[] = [
     categories: ["Audio"],
     websiteUrl: "https://suno.com",
     icon: Mic,
-    gradient: "from-yellow-400/20 to-yellow-600/20"
+    gradient: "from-yellow-500 to-yellow-700"
   },
   {
     id: "mistral",
@@ -509,7 +509,7 @@ export const aiTools: AITool[] = [
     categories: ["Code", "Text & Chat"],
     websiteUrl: "https://mistral.ai",
     icon: Cpu,
-    gradient: "from-orange-600/20 to-red-600/20"
+    gradient: "from-orange-600 to-red-700"
   },
   {
     id: "cohere",
@@ -523,7 +523,7 @@ export const aiTools: AITool[] = [
     categories: ["Code", "Text & Chat", "Research"],
     websiteUrl: "https://cohere.com",
     icon: Brain,
-    gradient: "from-emerald-500/20 to-teal-600/20"
+    gradient: "from-emerald-500 to-teal-700"
   },
   {
     id: "huggingface",
@@ -537,7 +537,7 @@ export const aiTools: AITool[] = [
     categories: ["Code", "Research"],
     websiteUrl: "https://huggingface.co",
     icon: Bot,
-    gradient: "from-yellow-400/20 to-orange-500/20"
+    gradient: "from-yellow-500 to-orange-600"
   },
   {
     id: "replicate",
@@ -551,7 +551,7 @@ export const aiTools: AITool[] = [
     categories: ["Code"],
     websiteUrl: "https://replicate.com",
     icon: Zap,
-    gradient: "from-stone-600/20 to-stone-800/20"
+    gradient: "from-stone-600 to-stone-900"
   },
   {
     id: "deepseek",
@@ -565,7 +565,7 @@ export const aiTools: AITool[] = [
     categories: ["Code", "Text & Chat"],
     websiteUrl: "https://deepseek.com",
     icon: Brain,
-    gradient: "from-blue-600/20 to-blue-800/20"
+    gradient: "from-blue-600 to-blue-900"
   },
   {
     id: "kimi",
@@ -579,7 +579,7 @@ export const aiTools: AITool[] = [
     categories: ["Text & Chat", "Research"],
     websiteUrl: "https://kimi.moonshot.cn",
     icon: FileText,
-    gradient: "from-indigo-400/20 to-purple-500/20"
+    gradient: "from-indigo-400 to-purple-600"
   },
   {
     id: "qwen",
@@ -593,7 +593,7 @@ export const aiTools: AITool[] = [
     categories: ["Text & Chat", "Code"],
     websiteUrl: "https://qwenlm.github.io",
     icon: Sparkles,
-    gradient: "from-purple-600/20 to-pink-700/20"
+    gradient: "from-purple-600 to-pink-800"
   },
   {
     id: "characterai",
@@ -607,7 +607,7 @@ export const aiTools: AITool[] = [
     categories: ["Text & Chat"],
     websiteUrl: "https://character.ai",
     icon: Bot,
-    gradient: "from-blue-400/20 to-indigo-500/20"
+    gradient: "from-blue-400 to-indigo-600"
   },
   {
     id: "pi",
@@ -621,7 +621,7 @@ export const aiTools: AITool[] = [
     categories: ["Text & Chat"],
     websiteUrl: "https://pi.ai",
     icon: MessageSquare,
-    gradient: "from-green-300/20 to-emerald-400/20"
+    gradient: "from-green-400 to-emerald-600"
   },
   {
     id: "you",
@@ -635,7 +635,7 @@ export const aiTools: AITool[] = [
     categories: ["Research"],
     websiteUrl: "https://you.com",
     icon: Search,
-    gradient: "from-cyan-500/20 to-blue-600/20"
+    gradient: "from-cyan-500 to-blue-700"
   },
   {
     id: "phind",
@@ -649,7 +649,7 @@ export const aiTools: AITool[] = [
     categories: ["Code", "Research"],
     websiteUrl: "https://phind.com",
     icon: Code2,
-    gradient: "from-slate-700/20 to-slate-900/20"
+    gradient: "from-slate-700 to-slate-900"
   },
   {
     id: "codeium",
@@ -663,6 +663,6 @@ export const aiTools: AITool[] = [
     categories: ["Code"],
     websiteUrl: "https://codeium.com",
     icon: Keyboard,
-    gradient: "from-green-500/20 to-teal-600/20"
+    gradient: "from-green-500 to-teal-700"
   }
 ];
