@@ -13,7 +13,7 @@ export default defineConfig({
   }
 })
 
-const port = Number(rawPort);
+
 
 if (Number.isNaN(port) || port <= 0) {
   throw new Error(`Invalid PORT value: "${rawPort}"`);
